@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ประเภทรถยนต์" />
+
+    <RadioGroup
+        android:layout_width="153dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rad_ecocar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ecocar" />
+
+        <RadioButton
+            android:id="@+id/rad_sedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sedan" />
+
+        <RadioButton
+            android:id="@+id/rad_SUV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUV" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ราคาน้ำมัน
+" />
+
+        <EditText
+            android:id="@+id/ed_PriceOil"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ระยะทาง" />
+
+        <EditText
+            android:id="@+id/ed_distance"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="calculator" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="reset" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ค่าเชื้อเพลิง"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="result"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
